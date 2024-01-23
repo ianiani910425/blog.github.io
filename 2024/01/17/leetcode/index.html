@@ -27,12 +27,12 @@
     
 <link rel="stylesheet" href="/blog.github.io/css/loader.css">
 
-    <meta name="description" content="基本C++語法 動態陣列 vector 12n &#x3D; 7,m&#x3D;8 	&#x2F;&#x2F;intnums 		&#x2F;&#x2F;陣列  123456789101112131415161718#include&lt;vector&gt;vector&lt;int&gt; nums(n);       vector&lt;int&gt; nums(m, 2); vector&lt;int&gt; nums&#123; 1,3,5 &amp;#">
+    <meta name="description" content="基本C++語法 動態陣列 vector n &#x3D; 7,m&#x3D;8 	&#x2F;&#x2F;intnums 		&#x2F;&#x2F;陣列  #include&lt;vector&gt;vector&lt;int&gt; nums(n);       vector&lt;int&gt; nums(m, 2); vector&lt;int&gt; nums&#123; 1,3,5 &#125;;vector&lt;vector&lt;int&amp;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="leetcode">
 <meta property="og:url" content="https://ianiani910425.github.io/blog.github.io/2024/01/17/leetcode/index.html">
 <meta property="og:site_name" content="ian的blog">
-<meta property="og:description" content="基本C++語法 動態陣列 vector 12n &#x3D; 7,m&#x3D;8 	&#x2F;&#x2F;intnums 		&#x2F;&#x2F;陣列  123456789101112131415161718#include&lt;vector&gt;vector&lt;int&gt; nums(n);       vector&lt;int&gt; nums(m, 2); vector&lt;int&gt; nums&#123; 1,3,5 &amp;#">
+<meta property="og:description" content="基本C++語法 動態陣列 vector n &#x3D; 7,m&#x3D;8 	&#x2F;&#x2F;intnums 		&#x2F;&#x2F;陣列  #include&lt;vector&gt;vector&lt;int&gt; nums(n);       vector&lt;int&gt; nums(m, 2); vector&lt;int&gt; nums&#123; 1,3,5 &#125;;vector&lt;vector&lt;int&amp;">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-01-17T10:54:59.000Z">
 <meta property="article:modified_time" content="2024-01-17T11:29:43.395Z">
@@ -148,6 +148,9 @@
                 
                 
 		            
+                    <a id="nav-search-btn" class="nav-icon popup-trigger" title="Search">
+                    </a>
+                
             </nav>
             <div id="search-form-wrap">
                 <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ianiani910425.github.io/blog.github.io"></form>
@@ -178,19 +181,19 @@
         <div class="e-content article-entry" itemprop="articleBody">
             
                 <h4 id="基本C-語法"><a href="#基本C-語法" class="headerlink" title="基本C++語法"></a>基本C++語法</h4><ol>
-<li>動態陣列 vector <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n = 7,m=8 	//int</span><br><span class="line">nums 		//陣列</span><br></pre></td></tr></table></figure></li>
+<li>動態陣列 vector <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">n = 7,m=8 	//int</span><br><span class="line">nums 		//陣列</span><br></pre></td></tr></table></figure></li>
 </ol>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;vector&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">nums</span><span class="params">(n)</span></span>;       </span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">nums</span><span class="params">(m, <span class="number">2</span>)</span></span>; </span><br><span class="line"></span><br><span class="line">vector&lt;<span class="type">int</span>&gt; nums&#123; <span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span> &#125;;</span><br><span class="line"></span><br><span class="line">vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; dp;		<span class="comment">//二維陣列</span></span><br><span class="line"></span><br><span class="line">vector&lt;vector&lt;<span class="type">bool</span>&gt;&gt; <span class="built_in">dp</span>(m, <span class="built_in">vector</span>&lt;<span class="type">bool</span>&gt;(n, <span class="literal">true</span>));</span><br><span class="line"></span><br><span class="line">nums.<span class="built_in">empty</span>()		<span class="comment">//是否空值</span></span><br><span class="line">nums.<span class="built_in">size</span>()		<span class="comment">//大小</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">nums.<span class="built_in">push_back</span>(n)		<span class="comment">//加入</span></span><br><span class="line">nums.<span class="built_in">back</span>();			<span class="comment">//查看最後一個</span></span><br><span class="line">nums.<span class="built_in">pop_back</span>(m)		<span class="comment">//刪除</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;vector&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">nums</span><span class="params">(n)</span></span>;       </span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">nums</span><span class="params">(m, <span class="number">2</span>)</span></span>; </span><br><span class="line"></span><br><span class="line">vector&lt;<span class="type">int</span>&gt; nums&#123; <span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span> &#125;;</span><br><span class="line"></span><br><span class="line">vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; dp;		<span class="comment">//二維陣列</span></span><br><span class="line"></span><br><span class="line">vector&lt;vector&lt;<span class="type">bool</span>&gt;&gt; <span class="built_in">dp</span>(m, <span class="built_in">vector</span>&lt;<span class="type">bool</span>&gt;(n, <span class="literal">true</span>));</span><br><span class="line"></span><br><span class="line">nums.<span class="built_in">empty</span>()		<span class="comment">//是否空值</span></span><br><span class="line">nums.<span class="built_in">size</span>()		<span class="comment">//大小</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">nums.<span class="built_in">push_back</span>(n)		<span class="comment">//加入</span></span><br><span class="line">nums.<span class="built_in">back</span>();			<span class="comment">//查看最後一個</span></span><br><span class="line">nums.<span class="built_in">pop_back</span>(m)		<span class="comment">//刪除</span></span><br></pre></td></tr></table></figure>
 <p><mark>從中間或頭部增刪元素會涉及搬移資料，效率會較低，使用演算法以避免此類操作</mark></p>
 <p>2.字串 string</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s 		//字串</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">s 		//字串</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string&gt;</span></span></span><br><span class="line"></span><br><span class="line">s.<span class="built_in">push_back</span>(<span class="string">&#x27;n&#x27;</span>)</span><br><span class="line">s += <span class="string">&quot;abc&quot;</span></span><br><span class="line"></span><br><span class="line">s.<span class="built_in">substr</span>(&lt;mark&gt;誰開始&lt;/mark&gt;,&lt;mark&gt;後面要幾個&lt;/mark&gt;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string&gt;</span></span></span><br><span class="line"></span><br><span class="line">s.<span class="built_in">push_back</span>(<span class="string">&#x27;n&#x27;</span>)</span><br><span class="line">s += <span class="string">&quot;abc&quot;</span></span><br><span class="line"></span><br><span class="line">s.<span class="built_in">substr</span>(&lt;mark&gt;誰開始&lt;/mark&gt;,&lt;mark&gt;後面要幾個&lt;/mark&gt;)</span><br></pre></td></tr></table></figure>
 
             
         </div>
         <footer class="article-footer">
-            <a data-url="https://ianiani910425.github.io/blog.github.io/2024/01/17/leetcode/" data-id="clrq4o9d50003i8voebao7yvi" data-title="leetcode"
+            <a data-url="https://ianiani910425.github.io/blog.github.io/2024/01/17/leetcode/" data-id="clrql756c0001bcvobunqaouk" data-title="leetcode"
                class="article-share-link">Share</a>
             
             
@@ -349,7 +352,7 @@
             
                 <div>
                     <span class="icon-brush"></span>
-                    803
+                    788
                     &nbsp;|&nbsp;
                     <span class="icon-coffee"></span>
                     00:04
@@ -480,6 +483,13 @@
 
 
 
+
+
+    
+<script src="/blog.github.io/js/generator_search.js"></script>
+
+    
+<script src="https://unpkg.com/instantsearch.js@4.56.1/dist/instantsearch.production.min.js"></script>
 
 
 

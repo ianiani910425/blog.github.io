@@ -27,12 +27,12 @@
     
 <link rel="stylesheet" href="/blog.github.io/css/loader.css">
 
-    <meta name="description" content="初次運行配置建議安裝套件 git graph  用戶信息設置12git config --global user.name &quot;ian&quot;git config --global user.email ian@example.com  查看配置 1git config --list  初次使用12345git initgit add .git commit -m &quot;註釋&amp;q">
+    <meta name="description" content="初次運行配置建議安裝套件 git graph  用戶信息設置git config --global user.name &quot;ian&quot;git config --global user.email ian@example.com  查看配置 git config --list  初次使用git initgit add .git commit -m &quot;註釋&quot;  gi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git 基礎">
 <meta property="og:url" content="https://ianiani910425.github.io/blog.github.io/2024/01/23/git/index.html">
 <meta property="og:site_name" content="ian的blog">
-<meta property="og:description" content="初次運行配置建議安裝套件 git graph  用戶信息設置12git config --global user.name &quot;ian&quot;git config --global user.email ian@example.com  查看配置 1git config --list  初次使用12345git initgit add .git commit -m &quot;註釋&amp;q">
+<meta property="og:description" content="初次運行配置建議安裝套件 git graph  用戶信息設置git config --global user.name &quot;ian&quot;git config --global user.email ian@example.com  查看配置 git config --list  初次使用git initgit add .git commit -m &quot;註釋&quot;  gi">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://ianiani910425.github.io/blog.github.io/%5Cblog.github.io%5Cimages%5Cpasted-0.png">
 <meta property="article:published_time" content="2024-01-23T07:56:52.000Z">
@@ -150,6 +150,9 @@
                 
                 
 		            
+                    <a id="nav-search-btn" class="nav-icon popup-trigger" title="Search">
+                    </a>
+                
             </nav>
             <div id="search-form-wrap">
                 <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ianiani910425.github.io/blog.github.io"></form>
@@ -182,31 +185,31 @@
                 <h2 id="初次運行配置"><a href="#初次運行配置" class="headerlink" title="初次運行配置"></a>初次運行配置</h2><h4 id="建議安裝套件"><a href="#建議安裝套件" class="headerlink" title="建議安裝套件"></a>建議安裝套件</h4><blockquote>
 <p>git graph<br><img src="/blog.github.io/%5Cblog.github.io%5Cimages%5Cpasted-0.png" alt="upload successful"></p>
 </blockquote>
-<h4 id="用戶信息設置"><a href="#用戶信息設置" class="headerlink" title="用戶信息設置"></a>用戶信息設置</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;ian&quot;</span><br><span class="line">git config --global user.email ian@example.com</span><br></pre></td></tr></table></figure>
+<h4 id="用戶信息設置"><a href="#用戶信息設置" class="headerlink" title="用戶信息設置"></a>用戶信息設置</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;ian&quot;</span><br><span class="line">git config --global user.email ian@example.com</span><br></pre></td></tr></table></figure>
 
 <p><font color="red">查看配置</font></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --list</span><br></pre></td></tr></table></figure>
 
-<h4 id="初次使用"><a href="#初次使用" class="headerlink" title="初次使用"></a>初次使用</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;註釋&quot;  </span><br><span class="line">git remote add origin https://github.com/ianiani910425/example.git</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
+<h4 id="初次使用"><a href="#初次使用" class="headerlink" title="初次使用"></a>初次使用</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m &quot;註釋&quot;  </span><br><span class="line">git remote add origin https://github.com/ianiani910425/example.git</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
 <p><font color="red"> commit 一定要註釋，且此時的commit並未上傳，只暫存在本地倉庫 </font></br><br><font color="green"> 本地倉庫名預設為origin </font></br></p>
-<h4 id="複製倉庫到本地"><a href="#複製倉庫到本地" class="headerlink" title="複製倉庫到本地"></a>複製倉庫到本地</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone [url]</span><br></pre></td></tr></table></figure>
-<h4 id="同步目前網上內容"><a href="#同步目前網上內容" class="headerlink" title="同步目前網上內容"></a>同步目前網上內容</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin main</span><br></pre></td></tr></table></figure>
-<h4 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h4><h6 id="創建分支"><a href="#創建分支" class="headerlink" title="創建分支"></a>創建分支</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch [name]</span><br></pre></td></tr></table></figure>
-<h6 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -v</span><br></pre></td></tr></table></figure>
-<h6 id="分支改名"><a href="#分支改名" class="headerlink" title="分支改名"></a>分支改名</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -v [branch_name] [new_branch_name]</span><br></pre></td></tr></table></figure>
-<h6 id="刪除分支"><a href="#刪除分支" class="headerlink" title="刪除分支"></a>刪除分支</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -d [branch_name]</span><br></pre></td></tr></table></figure>
-<h6 id="切換分支"><a href="#切換分支" class="headerlink" title="切換分支"></a>切換分支</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout [branch_name]</span><br></pre></td></tr></table></figure>
+<h4 id="複製倉庫到本地"><a href="#複製倉庫到本地" class="headerlink" title="複製倉庫到本地"></a>複製倉庫到本地</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone [url]</span><br></pre></td></tr></table></figure>
+<h4 id="同步目前網上內容"><a href="#同步目前網上內容" class="headerlink" title="同步目前網上內容"></a>同步目前網上內容</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git pull origin main</span><br></pre></td></tr></table></figure>
+<h4 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h4><h6 id="創建分支"><a href="#創建分支" class="headerlink" title="創建分支"></a>創建分支</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git branch [name]</span><br></pre></td></tr></table></figure>
+<h6 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git branch -v</span><br></pre></td></tr></table></figure>
+<h6 id="分支改名"><a href="#分支改名" class="headerlink" title="分支改名"></a>分支改名</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git branch -v [branch_name] [new_branch_name]</span><br></pre></td></tr></table></figure>
+<h6 id="刪除分支"><a href="#刪除分支" class="headerlink" title="刪除分支"></a>刪除分支</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git branch -d [branch_name]</span><br></pre></td></tr></table></figure>
+<h6 id="切換分支"><a href="#切換分支" class="headerlink" title="切換分支"></a>切換分支</h6><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git checkout [branch_name]</span><br></pre></td></tr></table></figure>
 <h6 id="分支合併"><a href="#分支合併" class="headerlink" title="分支合併:"></a>分支合併:</h6><p>先確認目前所在分支，再merge其他分支</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge [另一個預合併分支]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git merge [另一個預合併分支]</span><br></pre></td></tr></table></figure>
 
 <h4 id="撤銷"><a href="#撤銷" class="headerlink" title="撤銷"></a>撤銷</h4><p>先查看git紀錄</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log --oneline</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git log --oneline</span><br></pre></td></tr></table></figure>
 <p>再刪除</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset [填入剛才的id 或 名字 或 HEAD]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git reset [填入剛才的id 或 名字 或 HEAD]</span><br></pre></td></tr></table></figure>
             
         </div>
         <footer class="article-footer">
-            <a data-url="https://ianiani910425.github.io/blog.github.io/2024/01/23/git/" data-id="clrq4o9d50002i8vofx086aot" data-title="git 基礎"
+            <a data-url="https://ianiani910425.github.io/blog.github.io/2024/01/23/git/" data-id="clrql756e0003bcvo8b4c7aq5" data-title="git 基礎"
                class="article-share-link">Share</a>
             
             
@@ -348,7 +351,7 @@
             
                 <div>
                     <span class="icon-brush"></span>
-                    803
+                    788
                     &nbsp;|&nbsp;
                     <span class="icon-coffee"></span>
                     00:04
@@ -479,6 +482,13 @@
 
 
 
+
+
+    
+<script src="/blog.github.io/js/generator_search.js"></script>
+
+    
+<script src="https://unpkg.com/instantsearch.js@4.56.1/dist/instantsearch.production.min.js"></script>
 
 
 
