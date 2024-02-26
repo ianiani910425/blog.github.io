@@ -12,7 +12,7 @@
 
     
     <title>
-        c++ |
+        UVA |
         
         ian的blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,15 +27,15 @@
     
 <link rel="stylesheet" href="/blog.github.io/css/loader.css">
 
-    <meta name="description" content="基本C++語法 動態陣列 vector n &#x3D; 7,m&#x3D;8 	&#x2F;&#x2F;intnums 		&#x2F;&#x2F;陣列  #include&lt;vector&gt;vector&lt;int&gt; nums(n);       vector&lt;int&gt; nums(m, 2); vector&lt;int&gt; nums&#123; 1,3,5 &#125;;vector&lt;vector&lt;int&amp;">
+    <meta name="description" content="基礎題庫競賽題庫IOI&#x2F;APCS UVaa a001. 哈囉#include &lt;iostream&gt;#include &lt;string&gt;using namespace std;int main() &#123;    string name;    cin &gt;&gt; name;    cout &lt;&lt; &quot;hello, &quot; &lt;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="c++">
-<meta property="og:url" content="https://ianiani910425.github.io/blog.github.io/c++/index.html">
+<meta property="og:title" content="UVA">
+<meta property="og:url" content="https://ianiani910425.github.io/blog.github.io/UVA/index.html">
 <meta property="og:site_name" content="ian的blog">
-<meta property="og:description" content="基本C++語法 動態陣列 vector n &#x3D; 7,m&#x3D;8 	&#x2F;&#x2F;intnums 		&#x2F;&#x2F;陣列  #include&lt;vector&gt;vector&lt;int&gt; nums(n);       vector&lt;int&gt; nums(m, 2); vector&lt;int&gt; nums&#123; 1,3,5 &#125;;vector&lt;vector&lt;int&amp;">
+<meta property="og:description" content="基礎題庫競賽題庫IOI&#x2F;APCS UVaa a001. 哈囉#include &lt;iostream&gt;#include &lt;string&gt;using namespace std;int main() &#123;    string name;    cin &gt;&gt; name;    cout &lt;&lt; &quot;hello, &quot; &lt;">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-01-17T10:54:59.000Z">
-<meta property="article:modified_time" content="2024-01-28T08:21:12.402Z">
+<meta property="article:published_time" content="2024-02-26T08:52:36.000Z">
+<meta property="article:modified_time" content="2024-02-26T09:16:54.638Z">
 <meta property="article:author" content="ian">
 <meta property="article:tag" content="ian, ianiani910425, blog, hexo, github, ianiani910425.github.io">
 <meta name="twitter:card" content="summary">
@@ -109,7 +109,7 @@
         <div id="wrap">
             <header id="header">
     
-        <img data-src="/blog.github.io/images/eyes.avif" data-sizes="auto" alt="c++" class="lazyload">
+        <img data-src="/blog.github.io/images/eyes.avif" data-sizes="auto" alt="UVA" class="lazyload">
     
     <div id="header-outer" class="outer">
         <div id="header-title" class="inner">
@@ -117,7 +117,7 @@
                 
                     
                     
-                        <a href="/blog.github.io/" id="logo"><h1>c++</h1></a>
+                        <a href="/blog.github.io/" id="logo"><h1>UVA</h1></a>
                     
                 
             </div>
@@ -161,14 +161,14 @@
 
             <div id="content" class="outer">
                 
-                <section id="main"><article id="post-c++" class="h-entry article article-type-post"
+                <section id="main"><article id="post-UVA" class="h-entry article article-type-post"
          itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
     <div class="article-inner">
         <div class="article-meta">
             <div class="article-date wow slideInLeft">
-    <a href="/blog.github.io/c++/" class="article-date-link">
-        <time datetime="2024-01-17T10:54:59.000Z"
-              itemprop="datePublished">2024-01-17</time>
+    <a href="/blog.github.io/UVA/" class="article-date-link">
+        <time datetime="2024-02-26T08:52:36.000Z"
+              itemprop="datePublished">2024-02-26</time>
     </a>
 </div>
 
@@ -180,20 +180,17 @@
 
         <div class="e-content article-entry" itemprop="articleBody">
             
-                <h4 id="基本C-語法"><a href="#基本C-語法" class="headerlink" title="基本C++語法"></a>基本C++語法</h4><ol>
-<li>動態陣列 vector <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">n = 7,m=8 	//int</span><br><span class="line">nums 		//陣列</span><br></pre></td></tr></table></figure></li>
-</ol>
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;vector&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">nums</span><span class="params">(n)</span></span>;       </span><br><span class="line"><span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">nums</span><span class="params">(m, <span class="number">2</span>)</span></span>; </span><br><span class="line"></span><br><span class="line">vector&lt;<span class="type">int</span>&gt; nums&#123; <span class="number">1</span>,<span class="number">3</span>,<span class="number">5</span> &#125;;</span><br><span class="line"></span><br><span class="line">vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; dp;		<span class="comment">//二維陣列</span></span><br><span class="line"></span><br><span class="line">vector&lt;vector&lt;<span class="type">bool</span>&gt;&gt; <span class="built_in">dp</span>(m, <span class="built_in">vector</span>&lt;<span class="type">bool</span>&gt;(n, <span class="literal">true</span>));</span><br><span class="line"></span><br><span class="line">nums.<span class="built_in">empty</span>()		<span class="comment">//是否空值</span></span><br><span class="line">nums.<span class="built_in">size</span>()		<span class="comment">//大小</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">nums.<span class="built_in">push_back</span>(n)		<span class="comment">//加入</span></span><br><span class="line">nums.<span class="built_in">back</span>();			<span class="comment">//查看最後一個</span></span><br><span class="line">nums.<span class="built_in">pop_back</span>(m)		<span class="comment">//刪除</span></span><br></pre></td></tr></table></figure>
-<p><mark>從中間或頭部增刪元素會涉及搬移資料，效率會較低，使用演算法以避免此類操作</mark></p>
-<p>2.字串 string</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">s 		//字串</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;string&gt;</span></span></span><br><span class="line"></span><br><span class="line">s.<span class="built_in">push_back</span>(<span class="string">&#x27;n&#x27;</span>)</span><br><span class="line">s += <span class="string">&quot;abc&quot;</span></span><br><span class="line"></span><br><span class="line">s.<span class="built_in">substr</span>(&lt;mark&gt;誰開始&lt;/mark&gt;,&lt;mark&gt;後面要幾個&lt;/mark&gt;)</span><br></pre></td></tr></table></figure>
-
+                <h3 id="基礎題庫競賽題庫IOI-APCS-UVa"><a href="#基礎題庫競賽題庫IOI-APCS-UVa" class="headerlink" title="基礎題庫競賽題庫IOI&#x2F;APCS UVa"></a>基礎題庫競賽題庫IOI&#x2F;APCS UVa</h3><h4 id="a"><a href="#a" class="headerlink" title="a"></a>a</h4><ul>
+<li>a001. 哈囉<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    string name;</span><br><span class="line">    cin &gt;&gt; name;</span><br><span class="line">    cout &lt;&lt; <span class="string">&quot;hello, &quot;</span> &lt;&lt; name &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>a002. 簡易加法  <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> a,b;</span><br><span class="line">    cin &gt;&gt; a &gt;&gt; b;</span><br><span class="line">    cout &lt;&lt; a+b &lt;&lt; endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>a003. 兩光法師占卜術  <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> M, D;</span><br><span class="line">    cin &gt;&gt; M &gt;&gt; D;</span><br><span class="line">    <span class="type">int</span> S = (M * <span class="number">2</span> + D) % <span class="number">3</span>;</span><br><span class="line">    <span class="keyword">switch</span> (S) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">0</span>:</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;普通&quot;</span> &lt;&lt; endl;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;吉&quot;</span> &lt;&lt; endl;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;大吉&quot;</span> &lt;&lt; endl;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>a004. 文文的求婚  <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> a;</span><br><span class="line">    <span class="keyword">while</span>(cin &gt;&gt; a)&#123;</span><br><span class="line">        <span class="keyword">if</span>((a%<span class="number">4</span>==<span class="number">0</span> &amp;&amp; a%<span class="number">100</span>!=<span class="number">0</span>) || a%<span class="number">400</span> == <span class="number">0</span>)&#123;</span><br><span class="line">           cout &lt;&lt; <span class="string">&quot;閏年&quot;</span> &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        cout &lt;&lt; <span class="string">&quot;平年&quot;</span> &lt;&lt; endl;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="b"><a href="#b" class="headerlink" title="b"></a>b</h4><h4 id="c"><a href="#c" class="headerlink" title="c"></a>c</h4><h4 id="d"><a href="#d" class="headerlink" title="d"></a>d</h4><h4 id="e"><a href="#e" class="headerlink" title="e"></a>e</h4><h4 id="f"><a href="#f" class="headerlink" title="f"></a>f</h4><h4 id="g"><a href="#g" class="headerlink" title="g"></a>g</h4><h4 id="h"><a href="#h" class="headerlink" title="h"></a>h</h4><h4 id="i"><a href="#i" class="headerlink" title="i"></a>i</h4><h4 id="j"><a href="#j" class="headerlink" title="j"></a>j</h4><h4 id="k"><a href="#k" class="headerlink" title="k"></a>k</h4><h4 id="l"><a href="#l" class="headerlink" title="l"></a>l</h4><h4 id="m"><a href="#m" class="headerlink" title="m"></a>m</h4><h4 id="n"><a href="#n" class="headerlink" title="n"></a>n</h4>
             
         </div>
         <footer class="article-footer">
-            <a data-url="https://ianiani910425.github.io/blog.github.io/c++/" data-id="clt2z1yti0002a4vo2e77fpmk" data-title="c++"
+            <a data-url="https://ianiani910425.github.io/blog.github.io/UVA/" data-id="clt2z1ytj0003a4vo1i40hjhx" data-title="UVA"
                class="article-share-link">Share</a>
             
             
@@ -207,23 +204,23 @@
         
     <nav id="article-nav" class="wow fadeInUp">
         
-            <div class="article-nav-link-wrap article-nav-link-left">
+        
+            <div class="article-nav-link-wrap article-nav-link-right">
                 
                     
                     
-                        <img data-src="/blog.github.io/images/eyes.avif" data-sizes="auto" alt="Markdown Syntax"
+                        <img data-src="/blog.github.io/images/eyes.avif" data-sizes="auto" alt="palworld"
                              class="lazyload">
                     
                 
-                <a href="/blog.github.io/Markdown-Syntax/"></a>
-                <div class="article-nav-caption">Newer</div>
+                <a href="/blog.github.io/palworld/"></a>
+                <div class="article-nav-caption">Older</div>
                 <h3 class="article-nav-title">
                     
-                        Markdown Syntax
+                        palworld
                     
                 </h3>
             </div>
-        
         
     </nav>
 
@@ -248,7 +245,7 @@
         
           <div class="sidebar-toc-sidebar" ><div class="sidebar-toc">
     <h3 class="toc-title">Contents</h3>
-    <div class="sidebar-toc-wrapper"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%ACC-%E8%AA%9E%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">基本C++語法</span></a></li></ol></div>
+    <div class="sidebar-toc-wrapper"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A4%8E%E9%A1%8C%E5%BA%AB%E7%AB%B6%E8%B3%BD%E9%A1%8C%E5%BA%ABIOI-APCS-UVa"><span class="toc-number">1.</span> <span class="toc-text">基礎題庫競賽題庫IOI&#x2F;APCS UVa</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#a"><span class="toc-number">1.1.</span> <span class="toc-text">a</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#b"><span class="toc-number">1.2.</span> <span class="toc-text">b</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#c"><span class="toc-number">1.3.</span> <span class="toc-text">c</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#d"><span class="toc-number">1.4.</span> <span class="toc-text">d</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#e"><span class="toc-number">1.5.</span> <span class="toc-text">e</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#f"><span class="toc-number">1.6.</span> <span class="toc-text">f</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#g"><span class="toc-number">1.7.</span> <span class="toc-text">g</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#h"><span class="toc-number">1.8.</span> <span class="toc-text">h</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#i"><span class="toc-number">1.9.</span> <span class="toc-text">i</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#j"><span class="toc-number">1.10.</span> <span class="toc-text">j</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#k"><span class="toc-number">1.11.</span> <span class="toc-text">k</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#l"><span class="toc-number">1.12.</span> <span class="toc-text">l</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#m"><span class="toc-number">1.13.</span> <span class="toc-text">m</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#n"><span class="toc-number">1.14.</span> <span class="toc-text">n</span></a></li></ol></li></ol></div>
 </div>
 </div>
           <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
@@ -365,7 +362,7 @@
         
             <div class="sidebar-toc-sidebar" ><div class="sidebar-toc">
     <h3 class="toc-title">Contents</h3>
-    <div class="sidebar-toc-wrapper"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9F%BA%E6%9C%ACC-%E8%AA%9E%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">基本C++語法</span></a></li></ol></div>
+    <div class="sidebar-toc-wrapper"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E7%A4%8E%E9%A1%8C%E5%BA%AB%E7%AB%B6%E8%B3%BD%E9%A1%8C%E5%BA%ABIOI-APCS-UVa"><span class="toc-number">1.</span> <span class="toc-text">基礎題庫競賽題庫IOI&#x2F;APCS UVa</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#a"><span class="toc-number">1.1.</span> <span class="toc-text">a</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#b"><span class="toc-number">1.2.</span> <span class="toc-text">b</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#c"><span class="toc-number">1.3.</span> <span class="toc-text">c</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#d"><span class="toc-number">1.4.</span> <span class="toc-text">d</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#e"><span class="toc-number">1.5.</span> <span class="toc-text">e</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#f"><span class="toc-number">1.6.</span> <span class="toc-text">f</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#g"><span class="toc-number">1.7.</span> <span class="toc-text">g</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#h"><span class="toc-number">1.8.</span> <span class="toc-text">h</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#i"><span class="toc-number">1.9.</span> <span class="toc-text">i</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#j"><span class="toc-number">1.10.</span> <span class="toc-text">j</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#k"><span class="toc-number">1.11.</span> <span class="toc-text">k</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#l"><span class="toc-number">1.12.</span> <span class="toc-text">l</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#m"><span class="toc-number">1.13.</span> <span class="toc-text">m</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#n"><span class="toc-number">1.14.</span> <span class="toc-text">n</span></a></li></ol></li></ol></div>
 </div>
 </div>
             <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
